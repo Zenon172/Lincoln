@@ -26,9 +26,12 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<script type="text/javascript">
-			function hidden() {
-				document.getElementById('popup').style.display='none';
-			}
+			var close = document.getElementById('close');
+			var popup = document.getElementById('popup');
+
+			close.addEventListener("click", function() {
+  			popup.style.display = 'none';
+			});
 		</script>
 
 	</head>
@@ -242,9 +245,11 @@
 					<div class="col-md-3">
 						<div class="team-item">
 							<div class="team-image">
-								<div id="popup">
-									<a href="#team" onclick="hidden();"> <img src="fechar.png"/></a>
+								<div id="popup" class="popup">
 									<img src="images/itil.png" class="img-responsive" alt="Clique para ver maior">
+								</div>
+								<div>
+									<button id="close">Sair</button>
 								</div>
 							</div>
 							<div class="team-text">
