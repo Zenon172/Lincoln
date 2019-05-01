@@ -277,6 +277,10 @@ height: 95px;
     margin: 0 2px 4px;
     font-size: 30px;
 }
+.mz-module-about img {
+    width: 40px;
+    height: 40px;
+}
 
 /*--------------------
 4.2. Skills
@@ -775,7 +779,7 @@ and (max-width : 480px) {
     overflow: hidden;
 }
 .hoverzoom  img {
-   width: 100%; 
+   width: 80%; 
     border-radius: 2px;
     -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
         -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
